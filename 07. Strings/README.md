@@ -1,6 +1,8 @@
 # Chapter 07 — Strings
 
-**248 examples, each in its own cell, graded Easy → Medium → Hard.**
+**414 examples, each in its own cell, graded Easy → Medium → Hard.**
+
+**All 47 string methods are demonstrated**, with every parameter and edge case.
 
 Text is what most programs actually handle. This chapter goes from "what is a string" to the Unicode model that causes most text bugs — but you can stop at the end of any Easy section and still have learned something useful.
 
@@ -36,8 +38,18 @@ Every notebook is split into three sections:
 <tr><td><b>07.6</b></td><td><code>older_formatting_and_spec</code></td><td align="center">22</td><td><code>.format()</code>, <code>%</code>, and the full format mini-language</td></tr>
 <tr><td><b>07.7</b></td><td><code>unicode_and_encoding</code></td><td align="center">26</td><td><code>str</code> vs <code>bytes</code>, UTF-8, normalisation</td></tr>
 <tr><td><b>07.8</b></td><td><code>performance_and_textwrap</code></td><td align="center">19</td><td>Why <code>join</code> beats <code>+=</code>; paragraph formatting</td></tr>
+<tr><td><b>07.9</b></td><td><code>case_methods_deep_dive</code></td><td align="center">28</td><td>All 6 case methods: ß, Turkish i, casefold vs lower</td></tr>
+<tr><td><b>07.10</b></td><td><code>search_methods_deep_dive</code></td><td align="center">34</td><td>All 7 search methods, including <code>start</code>/<code>end</code> arguments</td></tr>
+<tr><td><b>07.11</b></td><td><code>split_join_deep_dive</code></td><td align="center">38</td><td>All 6 split/join methods, <code>maxsplit</code>, <code>keepends</code></td></tr>
+<tr><td><b>07.12</b></td><td><code>test_methods_deep_dive</code></td><td align="center">31</td><td>All 12 is-methods, including the 7 nobody teaches</td></tr>
+<tr><td><b>07.13</b></td><td><code>replace_strip_pad_deep_dive</code></td><td align="center">35</td><td>All 11 replace/pad methods, and the <code>strip()</code> trap</td></tr>
 <tr><td><b>—</b></td><td><code>exercises</code></td><td align="center">32</td><td>Predict, fix and build — also graded</td></tr>
 </table>
+
+### Deep-dive notebooks
+
+`07.1`–`07.8` teach the concepts. `07.9`–`07.13` cover **every method in full** —
+each parameter, each edge case, and how to choose between similar methods.
 
 ---
 
