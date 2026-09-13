@@ -65,12 +65,12 @@ At the hardware level a computer stores only two states, written as `0` and `1`.
 
 Every single thing a computer handles is ultimately a number:
 
-| Thing | How it is stored |
-|---|---|
-| The number 65 | `01000001` |
-| The letter `A` | `01000001` — the number 65, interpreted as text |
-| A pixel's colour | Three numbers: red, green, blue |
-| An instruction | A number that the CPU recognises as an operation |
+| Thing | Stored as | What decides the meaning |
+|:------|:----------|:-------------------------|
+| The number 65 | `01000001` | Read as a plain integer |
+| The letter `A` | `01000001` | The *same* bits, read as text |
+| A pixel's colour | Three numbers: red, green, blue | Position in an image buffer |
+| An instruction | A number the CPU recognises | Where the program counter points |
 
 Notice rows 1 and 2. The same bits mean different things depending on how they are *interpreted*. There is no label in the hardware saying "this is text." The type system in a language exists to keep that interpretation straight — which is exactly why Python cares so much about types.
 
@@ -367,7 +367,7 @@ Guido van Rossum began Python in December 1989 as a hobby project over the Chris
 The name comes from **Monty Python's Flying Circus**, not the snake. This is why example code in the docs is full of spam, eggs and silly walks.
 
 | Version | Year | Why it mattered |
-|---|---|---|
+|:--------|:----:|:----------------|
 | 0.9.0 | 1991 | First public release — already had classes, exceptions, functions |
 | 1.0 | 1994 | `lambda`, `map`, `filter`, `reduce` |
 | 2.0 | 2000 | List comprehensions, garbage collection |
@@ -489,7 +489,7 @@ Worth trying when you have a long-running pure-Python workload and have already 
 ### The others, briefly
 
 | Implementation | Host platform | Typical use |
-|---|---|---|
+|:---------------|:--------------|:------------|
 | **Jython** | JVM | Calling Java libraries from Python |
 | **IronPython** | .NET | Calling .NET libraries from Python |
 | **MicroPython** | Microcontrollers | Embedded boards, hardware projects |
@@ -514,38 +514,38 @@ Install CPython from python.org. Everything in this course targets it. Revisit t
 
 ## Chapter Files
 
-| File | Covers |
-|---|---|
-| `01.1 what_is_programming.ipynb` | Programs, instructions, precision |
-| `01.2 how_computers_execute.ipynb` | Bits, bytes, memory, the CPU cycle |
-| `01.3 algorithms_and_pseudocode.ipynb` | Algorithms, decomposition, the three building blocks |
-| `01.4 compiled_vs_interpreted.ipynb` | Bytecode, `__pycache__`, the compile step |
-| `01.5 programming_paradigms.ipynb` | The same task in four paradigms |
-| `01.6 what_is_python.ipynb` | Zen of Python, version info, Pythonic style |
-| `01.7 where_python_is_used.ipynb` | Domains and honest limitations |
-| `01.8 python_implementations.ipynb` | Detecting your implementation at runtime |
-| `exercises.ipynb` | Practice problems with solutions |
+| # | Notebook | Covers | The one idea to take away |
+|:--|:---------|:-------|:--------------------------|
+| **01.1** | `01.1 what_is_programming.ipynb` | Programs, instructions, precision | The computer does what you say, not what you mean |
+| **01.2** | `01.2 how_computers_execute.ipynb` | Bits, bytes, memory, the CPU cycle | A variable is a label pointing at memory, not a box |
+| **01.3** | `01.3 algorithms_and_pseudocode.ipynb` | Algorithms, decomposition, the three building blocks | Write the steps in English before writing any code |
+| **01.4** | `01.4 compiled_vs_interpreted.ipynb` | Bytecode, `__pycache__`, the compile step | Python compiles *and* interprets — it is a hybrid |
+| **01.5** | `01.5 programming_paradigms.ipynb` | The same task in four paradigms | Match the style to the problem, not to a loyalty |
+| **01.6** | `01.6 what_is_python.ipynb` | Zen of Python, version info, Pythonic style | Readability is the language's central value |
+| **01.7** | `01.7 where_python_is_used.ipynb` | Domains and honest limitations | Python wins where developer time beats machine time |
+| **01.8** | `01.8 python_implementations.ipynb` | Detecting your implementation at runtime | Use CPython unless you have measured a reason not to |
+| **—** | `exercises.ipynb` | Practice problems with solutions | Answer before you run — that is where learning happens |
 
 ---
 
 ## Key Terms
 
-| Term | Meaning |
-|---|---|
-| **Program** | Instructions stored on disk |
-| **Process** | A running program with live state in memory |
-| **Source code** | Human-readable instructions you write |
-| **Machine code** | Binary instructions the CPU executes directly |
-| **Bytecode** | Intermediate instructions the Python VM executes |
-| **Algorithm** | Finite, unambiguous sequence of steps solving a problem |
-| **Pseudocode** | Structured English description of an algorithm |
-| **Compiler** | Translates all source to machine code ahead of time |
-| **Interpreter** | Reads and executes source as it goes |
-| **Paradigm** | A style of organising code |
-| **CPython** | The reference Python implementation, written in C |
-| **PVM** | Python Virtual Machine — executes bytecode |
-| **GIL** | Global Interpreter Lock — limits CPU parallelism across threads |
-| **Pythonic** | Idiomatic Python, following the language's conventions |
+| Term | Meaning | Where it comes up |
+|:-----|:--------|:------------------|
+| **Program** | Instructions stored on disk | 01.1 — the file you save |
+| **Process** | A running program with live state in memory | 01.1 — what starts when you run it |
+| **Source code** | Human-readable instructions you write | 01.1 — written for humans, not machines |
+| **Machine code** | Binary instructions the CPU executes directly | 01.2 — what the processor truly understands |
+| **Bytecode** | Intermediate instructions the Python VM executes | 01.4 — inspect it with `dis` in Chapter 43 |
+| **Algorithm** | Finite, unambiguous sequence of steps solving a problem | 01.3 — the thinking half of the job |
+| **Pseudocode** | Structured English description of an algorithm | 01.3 — write this before any code |
+| **Compiler** | Translates all source to machine code ahead of time | 01.4 — how C and Rust work |
+| **Interpreter** | Reads and executes source as it goes | 01.4 — how Python mostly works |
+| **Paradigm** | A style of organising code | 01.5 — Chapters 16, 24–28, 31 |
+| **CPython** | The reference Python implementation, written in C | 01.8 — almost certainly what you run |
+| **PVM** | Python Virtual Machine — executes bytecode | 01.4 — the "interpreted" half of Python |
+| **GIL** | Global Interpreter Lock — limits CPU parallelism across threads | 01.8 — the full story in Chapter 33 |
+| **Pythonic** | Idiomatic Python, following the language's conventions | 01.6 — an instinct you build over time |
 
 ---
 

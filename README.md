@@ -53,53 +53,53 @@ Then open any `.ipynb` file. VS Code also opens notebooks natively — install t
 
 Tick a chapter when you have read the notes, run every example, and finished the exercises.
 
-| ✅ | Ch | Chapter | Subchapters | Status |
-|:--:|:---|:------------------------------------|:--:|:------------|
-| ⬜ | **01** | Introduction to Programming | 8 | In progress |
-| ⬜ | **02** | Setup and First Program | 7 | Not started |
-| ⬜ | **03** | Syntax Fundamentals | 7 | Not started |
-| ⬜ | **04** | Variables and Memory Model | 8 | Not started |
-| ⬜ | **05** | Data Types — Numbers and Booleans | 8 | Not started |
-| ⬜ | **06** | Operators | 9 | Not started |
-| ⬜ | **07** | Strings | 11 | Not started |
-| ⬜ | **08** | Input, Output, and Basic I/O | 4 | Not started |
-| ⬜ | **09** | Control Flow — Conditionals | 5 | Not started |
-| ⬜ | **10** | Control Flow — Loops | 9 | Not started |
-| ⬜ | **11** | Lists | 9 | Not started |
-| ⬜ | **12** | Tuples | 7 | Not started |
-| ⬜ | **13** | Sets and Frozensets | 7 | Not started |
-| ⬜ | **14** | Dictionaries | 10 | Not started |
-| ⬜ | **15** | Comprehensions | 7 | Not started |
-| ⬜ | **16** | Functions — Fundamentals | 9 | Not started |
-| ⬜ | **17** | Functions — Scope and Advanced | 9 | Not started |
-| ⬜ | **18** | Decorators | 7 | Not started |
-| ⬜ | **19** | Iterators and Generators | 9 | Not started |
-| ⬜ | **20** | Modules and Packages | 10 | Not started |
-| ⬜ | **21** | Standard Library Tour | 12 | Not started |
-| ⬜ | **22** | File Handling | 12 | Not started |
-| ⬜ | **23** | Error Handling and Exceptions | 12 | Not started |
-| ⬜ | **24** | OOP — Fundamentals | 9 | Not started |
-| ⬜ | **25** | OOP — Encapsulation and Properties | 6 | Not started |
-| ⬜ | **26** | OOP — Inheritance and Polymorphism | 9 | Not started |
-| ⬜ | **27** | OOP — Magic Methods | 10 | Not started |
-| ⬜ | **28** | OOP — Advanced | 10 | Not started |
-| ⬜ | **29** | Context Managers | 6 | Not started |
-| ⬜ | **30** | Regular Expressions | 10 | Not started |
-| ⬜ | **31** | Functional Programming | 7 | Not started |
-| ⬜ | **32** | Type Hints and Static Typing | 8 | Not started |
-| ⬜ | **33** | Concurrency — Threading | 8 | Not started |
-| ⬜ | **34** | Concurrency — Multiprocessing | 6 | Not started |
-| ⬜ | **35** | Asynchronous Programming | 9 | Not started |
-| ⬜ | **36** | Testing | 10 | Not started |
-| ⬜ | **37** | Debugging, Logging, Profiling | 8 | Not started |
-| ⬜ | **38** | Working with Data Formats and APIs | 7 | Not started |
-| ⬜ | **39** | Databases | 6 | Not started |
-| ⬜ | **40** | Project Structure and Packaging | 7 | Not started |
-| ⬜ | **41** | Code Quality and Tooling | 7 | Not started |
-| ⬜ | **42** | Security Basics | 5 | Not started |
-| ⬜ | **43** | Advanced Internals | 7 | Not started |
-| ⬜ | **44** | Projects | 8 | Not started |
-| ⬜ | **45** | Appendix | 6 | Not started |
+| ✅ | Ch | Chapter | What You'll Learn | Topics | Status |
+|:--:|:--:|:-----------|:-------------------|:--:|:-----------|
+| ⬜ | **01** | Introduction to Programming | Think like a programmer before writing any code | 8 | In progress |
+| ⬜ | **02** | Setup and First Program | Get Python installed and run your first script | 7 | Not started |
+| ⬜ | **03** | Syntax Fundamentals | Read and write correctly formed Python | 7 | Not started |
+| ⬜ | **04** | Variables and Memory Model | Understand what a variable really is | 8 | Not started |
+| ⬜ | **05** | Data Types — Numbers and Booleans | Work with every kind of number Python offers | 8 | Not started |
+| ⬜ | **06** | Operators | Combine and compare values correctly | 9 | Not started |
+| ⬜ | **07** | Strings | Handle text confidently, including Unicode | 11 | Not started |
+| ⬜ | **08** | Input, Output, and Basic I/O | Talk to the user and the command line | 4 | Not started |
+| ⬜ | **09** | Control Flow — Conditionals | Make your programs take decisions | 5 | Not started |
+| ⬜ | **10** | Control Flow — Loops | Repeat work without repeating yourself | 9 | Not started |
+| ⬜ | **11** | Lists | Store ordered, changeable collections | 9 | Not started |
+| ⬜ | **12** | Tuples | Store fixed records that cannot change | 7 | Not started |
+| ⬜ | **13** | Sets and Frozensets | Handle uniqueness and fast membership tests | 7 | Not started |
+| ⬜ | **14** | Dictionaries | Look data up instantly by key | 10 | Not started |
+| ⬜ | **15** | Comprehensions | Build collections in one readable line | 7 | Not started |
+| ⬜ | **16** | Functions — Fundamentals | Package logic into reusable functions | 9 | Not started |
+| ⬜ | **17** | Functions — Scope and Advanced | Master scope, closures and higher-order functions | 9 | Not started |
+| ⬜ | **18** | Decorators | Add behaviour to functions without editing them | 7 | Not started |
+| ⬜ | **19** | Iterators and Generators | Process data too large to fit in memory | 9 | Not started |
+| ⬜ | **20** | Modules and Packages | Split a program across many files | 10 | Not started |
+| ⬜ | **21** | Standard Library Tour | Solve common problems with zero installs | 12 | Not started |
+| ⬜ | **22** | File Handling | Read and write files of every kind | 12 | Not started |
+| ⬜ | **23** | Error Handling and Exceptions | Handle failure without crashing | 12 | Not started |
+| ⬜ | **24** | OOP — Fundamentals | Model your problem domain with classes | 9 | Not started |
+| ⬜ | **25** | OOP — Encapsulation and Properties | Control access to an object's internals | 6 | Not started |
+| ⬜ | **26** | OOP — Inheritance and Polymorphism | Share and specialise behaviour between classes | 9 | Not started |
+| ⬜ | **27** | OOP — Magic Methods | Make your objects work with Python's syntax | 10 | Not started |
+| ⬜ | **28** | OOP — Advanced | Use the modern tools that cut boilerplate | 10 | Not started |
+| ⬜ | **29** | Context Managers | Manage resources that must be cleaned up | 6 | Not started |
+| ⬜ | **30** | Regular Expressions | Search and transform text by pattern | 10 | Not started |
+| ⬜ | **31** | Functional Programming | Write predictable, side-effect-free code | 7 | Not started |
+| ⬜ | **32** | Type Hints and Static Typing | Catch type bugs before running the code | 8 | Not started |
+| ⬜ | **33** | Concurrency — Threading | Run work concurrently, and know the GIL's limits | 8 | Not started |
+| ⬜ | **34** | Concurrency — Multiprocessing | Use every CPU core for heavy work | 6 | Not started |
+| ⬜ | **35** | Asynchronous Programming | Handle thousands of I/O operations at once | 9 | Not started |
+| ⬜ | **36** | Testing | Prove your code works, and keep it working | 10 | Not started |
+| ⬜ | **37** | Debugging, Logging, Profiling | Find bugs and bottlenecks systematically | 8 | Not started |
+| ⬜ | **38** | Working with Data Formats and APIs | Exchange data with files and web services | 7 | Not started |
+| ⬜ | **39** | Databases | Store data that outlives your program | 6 | Not started |
+| ⬜ | **40** | Project Structure and Packaging | Turn your code into an installable package | 7 | Not started |
+| ⬜ | **41** | Code Quality and Tooling | Write code a team can maintain | 7 | Not started |
+| ⬜ | **42** | Security Basics | Avoid the mistakes that cause breaches | 5 | Not started |
+| ⬜ | **43** | Advanced Internals | Understand what Python does under the hood | 7 | Not started |
+| ⬜ | **44** | Projects | Apply everything to real, complete programs | 8 | Not started |
+| ⬜ | **45** | Appendix | Look things up fast when you need them | 6 | Not started |
 
 ---
 
