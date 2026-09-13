@@ -62,9 +62,9 @@ Tick a chapter when you have read the notes, run every example, and finished the
 <th align="center" width="7%">Topics</th>
 <th align="left" width="15%">Status</th>
 </tr>
-<tr><td align="center">⬜</td><td align="center"><b>01</b></td><td align="left">Introduction to Programming</td><td align="left">Think like a programmer before writing any code</td><td align="center">8</td><td align="left">In progress</td></tr>
-<tr><td align="center">⬜</td><td align="center"><b>02</b></td><td align="left">Setup and First Program</td><td align="left">Get Python installed and run your first script</td><td align="center">7</td><td align="left">Not started</td></tr>
-<tr><td align="center">⬜</td><td align="center"><b>03</b></td><td align="left">Syntax Fundamentals</td><td align="left">Read and write correctly formed Python</td><td align="center">7</td><td align="left">Not started</td></tr>
+<tr><td align="center">✅</td><td align="center"><b>01</b></td><td align="left">Introduction to Programming</td><td align="left">Think like a programmer before writing any code</td><td align="center">8</td><td align="left">Complete</td></tr>
+<tr><td align="center">✅</td><td align="center"><b>02</b></td><td align="left">Setup and First Program</td><td align="left">Get Python installed and run your first script</td><td align="center">7</td><td align="left">Complete</td></tr>
+<tr><td align="center">⬜</td><td align="center"><b>03</b></td><td align="left">Syntax Fundamentals</td><td align="left">Read and write correctly formed Python</td><td align="center">7</td><td align="left">Up next</td></tr>
 <tr><td align="center">⬜</td><td align="center"><b>04</b></td><td align="left">Variables and Memory Model</td><td align="left">Understand what a variable really is</td><td align="center">8</td><td align="left">Not started</td></tr>
 <tr><td align="center">⬜</td><td align="center"><b>05</b></td><td align="left">Data Types — Numbers and Booleans</td><td align="left">Work with every kind of number Python offers</td><td align="center">8</td><td align="left">Not started</td></tr>
 <tr><td align="center">⬜</td><td align="center"><b>06</b></td><td align="left">Operators</td><td align="left">Combine and compare values correctly</td><td align="center">9</td><td align="left">Not started</td></tr>
