@@ -762,3 +762,18 @@ Tick a chapter when you have read the notes, run every example, and finished the
 - Output is printed with labels so you can match each line to the code that produced it.
 - One concept per notebook cell, with the explanation in the markdown cell directly above it.
 - Notebooks are committed without saved output, so every run is genuinely yours.
+
+---
+
+## Contributing / Local Setup
+
+Notebooks are committed **without output**, so diffs stay readable. This is enforced by [`nbstripout`](https://github.com/kynan/nbstripout) as a git filter.
+
+After cloning, run this once:
+
+```bash
+pip install nbstripout
+nbstripout --install --attributes .gitattributes
+```
+
+Your executed output stays in your working copy — it is stripped only on the way into git, so you never lose what you ran.
