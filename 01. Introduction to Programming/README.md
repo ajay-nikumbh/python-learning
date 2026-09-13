@@ -65,12 +65,17 @@ At the hardware level a computer stores only two states, written as `0` and `1`.
 
 Every single thing a computer handles is ultimately a number:
 
-| Thing | Stored as | What decides the meaning |
-|:------|:----------|:-------------------------|
-| The number 65 | `01000001` | Read as a plain integer |
-| The letter `A` | `01000001` | The *same* bits, read as text |
-| A pixel's colour | Three numbers: red, green, blue | Position in an image buffer |
-| An instruction | A number the CPU recognises | Where the program counter points |
+<table width="100%">
+<tr>
+<th align="left" width="28%">Thing</th>
+<th align="left" width="32%">Stored as</th>
+<th align="left" width="40%">What decides the meaning</th>
+</tr>
+<tr><td align="left">The number 65</td><td align="left"><code>01000001</code></td><td align="left">Read as a plain integer</td></tr>
+<tr><td align="left">The letter <code>A</code></td><td align="left"><code>01000001</code></td><td align="left">The *same* bits, read as text</td></tr>
+<tr><td align="left">A pixel's colour</td><td align="left">Three numbers: red, green, blue</td><td align="left">Position in an image buffer</td></tr>
+<tr><td align="left">An instruction</td><td align="left">A number the CPU recognises</td><td align="left">Where the program counter points</td></tr>
+</table>
 
 Notice rows 1 and 2. The same bits mean different things depending on how they are *interpreted*. There is no label in the hardware saying "this is text." The type system in a language exists to keep that interpretation straight — which is exactly why Python cares so much about types.
 
@@ -366,18 +371,23 @@ Guido van Rossum began Python in December 1989 as a hobby project over the Chris
 
 The name comes from **Monty Python's Flying Circus**, not the snake. This is why example code in the docs is full of spam, eggs and silly walks.
 
-| Version | Year | Why it mattered |
-|:--------|:----:|:----------------|
-| 0.9.0 | 1991 | First public release — already had classes, exceptions, functions |
-| 1.0 | 1994 | `lambda`, `map`, `filter`, `reduce` |
-| 2.0 | 2000 | List comprehensions, garbage collection |
-| 3.0 | 2008 | Deliberately backwards-incompatible cleanup |
-| 3.6 | 2016 | f-strings |
-| 3.9 | 2020 | Dict merge `\|`, built-in generic types |
-| 3.10 | 2021 | `match` statement, better error messages |
-| 3.11 | 2022 | Major speed improvements (10–60%) |
-| 3.12 | 2023 | Improved f-strings, better typing |
-| 3.13 | 2024 | Experimental free-threaded build (no GIL) |
+<table width="100%">
+<tr>
+<th align="left" width="14%">Version</th>
+<th align="center" width="10%">Year</th>
+<th align="left" width="76%">Why it mattered</th>
+</tr>
+<tr><td align="left">0.9.0</td><td align="center">1991</td><td align="left">First public release — already had classes, exceptions, functions</td></tr>
+<tr><td align="left">1.0</td><td align="center">1994</td><td align="left"><code>lambda</code>, <code>map</code>, <code>filter</code>, <code>reduce</code></td></tr>
+<tr><td align="left">2.0</td><td align="center">2000</td><td align="left">List comprehensions, garbage collection</td></tr>
+<tr><td align="left">3.0</td><td align="center">2008</td><td align="left">Deliberately backwards-incompatible cleanup</td></tr>
+<tr><td align="left">3.6</td><td align="center">2016</td><td align="left">f-strings</td></tr>
+<tr><td align="left">3.9</td><td align="center">2020</td><td align="left">Dict merge <code>|</code>, built-in generic types</td></tr>
+<tr><td align="left">3.10</td><td align="center">2021</td><td align="left"><code>match</code> statement, better error messages</td></tr>
+<tr><td align="left">3.11</td><td align="center">2022</td><td align="left">Major speed improvements (10–60%)</td></tr>
+<tr><td align="left">3.12</td><td align="center">2023</td><td align="left">Improved f-strings, better typing</td></tr>
+<tr><td align="left">3.13</td><td align="center">2024</td><td align="left">Experimental free-threaded build (no GIL)</td></tr>
+</table>
 
 **Python 2 is dead.** It reached end-of-life on 1 January 2020. If a tutorial uses `print "hello"` without parentheses, it is Python 2 — close the tab.
 
@@ -488,14 +498,19 @@ Worth trying when you have a long-running pure-Python workload and have already 
 
 ### The others, briefly
 
-| Implementation | Host platform | Typical use |
-|:---------------|:--------------|:------------|
-| **Jython** | JVM | Calling Java libraries from Python |
-| **IronPython** | .NET | Calling .NET libraries from Python |
-| **MicroPython** | Microcontrollers | Embedded boards, hardware projects |
-| **CircuitPython** | Microcontrollers | Education-focused MicroPython fork |
-| **Cython** | Compiles to C | Speeding up hot paths with C-level types |
-| **Graal Python** | GraalVM | Polyglot JVM applications |
+<table width="100%">
+<tr>
+<th align="left" width="24%">Implementation</th>
+<th align="left" width="26%">Host platform</th>
+<th align="left" width="50%">Typical use</th>
+</tr>
+<tr><td align="left"><b>Jython</b></td><td align="left">JVM</td><td align="left">Calling Java libraries from Python</td></tr>
+<tr><td align="left"><b>IronPython</b></td><td align="left">.NET</td><td align="left">Calling .NET libraries from Python</td></tr>
+<tr><td align="left"><b>MicroPython</b></td><td align="left">Microcontrollers</td><td align="left">Embedded boards, hardware projects</td></tr>
+<tr><td align="left"><b>CircuitPython</b></td><td align="left">Microcontrollers</td><td align="left">Education-focused MicroPython fork</td></tr>
+<tr><td align="left"><b>Cython</b></td><td align="left">Compiles to C</td><td align="left">Speeding up hot paths with C-level types</td></tr>
+<tr><td align="left"><b>Graal Python</b></td><td align="left">GraalVM</td><td align="left">Polyglot JVM applications</td></tr>
+</table>
 
 ### Terms you will see and should not confuse
 
@@ -514,38 +529,49 @@ Install CPython from python.org. Everything in this course targets it. Revisit t
 
 ## Chapter Files
 
-| # | Notebook | Covers | The one idea to take away |
-|:--|:---------|:-------|:--------------------------|
-| **01.1** | `01.1 what_is_programming.ipynb` | Programs, instructions, precision | The computer does what you say, not what you mean |
-| **01.2** | `01.2 how_computers_execute.ipynb` | Bits, bytes, memory, the CPU cycle | A variable is a label pointing at memory, not a box |
-| **01.3** | `01.3 algorithms_and_pseudocode.ipynb` | Algorithms, decomposition, the three building blocks | Write the steps in English before writing any code |
-| **01.4** | `01.4 compiled_vs_interpreted.ipynb` | Bytecode, `__pycache__`, the compile step | Python compiles *and* interprets — it is a hybrid |
-| **01.5** | `01.5 programming_paradigms.ipynb` | The same task in four paradigms | Match the style to the problem, not to a loyalty |
-| **01.6** | `01.6 what_is_python.ipynb` | Zen of Python, version info, Pythonic style | Readability is the language's central value |
-| **01.7** | `01.7 where_python_is_used.ipynb` | Domains and honest limitations | Python wins where developer time beats machine time |
-| **01.8** | `01.8 python_implementations.ipynb` | Detecting your implementation at runtime | Use CPython unless you have measured a reason not to |
-| **—** | `exercises.ipynb` | Practice problems with solutions | Answer before you run — that is where learning happens |
+<table width="100%">
+<tr>
+<th align="left" width="7%">#</th>
+<th align="left" width="28%">Notebook</th>
+<th align="left" width="30%">Covers</th>
+<th align="left" width="35%">The one idea to take away</th>
+</tr>
+<tr><td align="left"><b>01.1</b></td><td align="left"><code>01.1 what_is_programming.ipynb</code></td><td align="left">Programs, instructions, precision</td><td align="left">The computer does what you say, not what you mean</td></tr>
+<tr><td align="left"><b>01.2</b></td><td align="left"><code>01.2 how_computers_execute.ipynb</code></td><td align="left">Bits, bytes, memory, the CPU cycle</td><td align="left">A variable is a label pointing at memory, not a box</td></tr>
+<tr><td align="left"><b>01.3</b></td><td align="left"><code>01.3 algorithms_and_pseudocode.ipynb</code></td><td align="left">Algorithms, decomposition, the three building blocks</td><td align="left">Write the steps in English before writing any code</td></tr>
+<tr><td align="left"><b>01.4</b></td><td align="left"><code>01.4 compiled_vs_interpreted.ipynb</code></td><td align="left">Bytecode, <code>__pycache__</code>, the compile step</td><td align="left">Python compiles *and* interprets — it is a hybrid</td></tr>
+<tr><td align="left"><b>01.5</b></td><td align="left"><code>01.5 programming_paradigms.ipynb</code></td><td align="left">The same task in four paradigms</td><td align="left">Match the style to the problem, not to a loyalty</td></tr>
+<tr><td align="left"><b>01.6</b></td><td align="left"><code>01.6 what_is_python.ipynb</code></td><td align="left">Zen of Python, version info, Pythonic style</td><td align="left">Readability is the language's central value</td></tr>
+<tr><td align="left"><b>01.7</b></td><td align="left"><code>01.7 where_python_is_used.ipynb</code></td><td align="left">Domains and honest limitations</td><td align="left">Python wins where developer time beats machine time</td></tr>
+<tr><td align="left"><b>01.8</b></td><td align="left"><code>01.8 python_implementations.ipynb</code></td><td align="left">Detecting your implementation at runtime</td><td align="left">Use CPython unless you have measured a reason not to</td></tr>
+<tr><td align="left"><b>—</b></td><td align="left"><code>exercises.ipynb</code></td><td align="left">Practice problems with solutions</td><td align="left">Answer before you run — that is where learning happens</td></tr>
+</table>
 
 ---
 
 ## Key Terms
 
-| Term | Meaning | Where it comes up |
-|:-----|:--------|:------------------|
-| **Program** | Instructions stored on disk | 01.1 — the file you save |
-| **Process** | A running program with live state in memory | 01.1 — what starts when you run it |
-| **Source code** | Human-readable instructions you write | 01.1 — written for humans, not machines |
-| **Machine code** | Binary instructions the CPU executes directly | 01.2 — what the processor truly understands |
-| **Bytecode** | Intermediate instructions the Python VM executes | 01.4 — inspect it with `dis` in Chapter 43 |
-| **Algorithm** | Finite, unambiguous sequence of steps solving a problem | 01.3 — the thinking half of the job |
-| **Pseudocode** | Structured English description of an algorithm | 01.3 — write this before any code |
-| **Compiler** | Translates all source to machine code ahead of time | 01.4 — how C and Rust work |
-| **Interpreter** | Reads and executes source as it goes | 01.4 — how Python mostly works |
-| **Paradigm** | A style of organising code | 01.5 — Chapters 16, 24–28, 31 |
-| **CPython** | The reference Python implementation, written in C | 01.8 — almost certainly what you run |
-| **PVM** | Python Virtual Machine — executes bytecode | 01.4 — the "interpreted" half of Python |
-| **GIL** | Global Interpreter Lock — limits CPU parallelism across threads | 01.8 — the full story in Chapter 33 |
-| **Pythonic** | Idiomatic Python, following the language's conventions | 01.6 — an instinct you build over time |
+<table width="100%">
+<tr>
+<th align="left" width="16%">Term</th>
+<th align="left" width="48%">Meaning</th>
+<th align="left" width="36%">Where it comes up</th>
+</tr>
+<tr><td align="left"><b>Program</b></td><td align="left">Instructions stored on disk</td><td align="left">01.1 — the file you save</td></tr>
+<tr><td align="left"><b>Process</b></td><td align="left">A running program with live state in memory</td><td align="left">01.1 — what starts when you run it</td></tr>
+<tr><td align="left"><b>Source code</b></td><td align="left">Human-readable instructions you write</td><td align="left">01.1 — written for humans, not machines</td></tr>
+<tr><td align="left"><b>Machine code</b></td><td align="left">Binary instructions the CPU executes directly</td><td align="left">01.2 — what the processor truly understands</td></tr>
+<tr><td align="left"><b>Bytecode</b></td><td align="left">Intermediate instructions the Python VM executes</td><td align="left">01.4 — inspect it with <code>dis</code> in Chapter 43</td></tr>
+<tr><td align="left"><b>Algorithm</b></td><td align="left">Finite, unambiguous sequence of steps solving a problem</td><td align="left">01.3 — the thinking half of the job</td></tr>
+<tr><td align="left"><b>Pseudocode</b></td><td align="left">Structured English description of an algorithm</td><td align="left">01.3 — write this before any code</td></tr>
+<tr><td align="left"><b>Compiler</b></td><td align="left">Translates all source to machine code ahead of time</td><td align="left">01.4 — how C and Rust work</td></tr>
+<tr><td align="left"><b>Interpreter</b></td><td align="left">Reads and executes source as it goes</td><td align="left">01.4 — how Python mostly works</td></tr>
+<tr><td align="left"><b>Paradigm</b></td><td align="left">A style of organising code</td><td align="left">01.5 — Chapters 16, 24–28, 31</td></tr>
+<tr><td align="left"><b>CPython</b></td><td align="left">The reference Python implementation, written in C</td><td align="left">01.8 — almost certainly what you run</td></tr>
+<tr><td align="left"><b>PVM</b></td><td align="left">Python Virtual Machine — executes bytecode</td><td align="left">01.4 — the "interpreted" half of Python</td></tr>
+<tr><td align="left"><b>GIL</b></td><td align="left">Global Interpreter Lock — limits CPU parallelism across threads</td><td align="left">01.8 — the full story in Chapter 33</td></tr>
+<tr><td align="left"><b>Pythonic</b></td><td align="left">Idiomatic Python, following the language's conventions</td><td align="left">01.6 — an instinct you build over time</td></tr>
+</table>
 
 ---
 
